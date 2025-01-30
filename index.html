@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h3>HOME</h3>
+                <h2 id="score-home">0</h2>
+            <div id="home-btn">
+                <button onclick="incrementHomeSingle()">+1</button>
+                <button onclick="incrementHomeDouble()">+2</button>
+                <button onclick="incrementHomeTriple()">+3</button>
+            </div>
+            </div>
+            <div id="qtr-reset-container">
+                <div id="qtr">
+                    <div id="timer">12:00</div>
+                    <h4>QTR</h4>
+                    <div id="qtr-buttons-container">
+                        <div id="qtr-numbers-first">
+                            <button class="btn-qtr" onclick="qtrFirst()">1st</button>
+                            <button class="btn-qtr" onclick="qtrSecond()">2nd</button>
+                        </div>
+                <h5 id="qtr-number">1</h5>
+                        <div id="qtr-numbers-second">
+                            <button class="btn-qtr" onclick="qtrThird()">3rd</button>
+                            <button class="btn-qtr" onclick="qtrFourth()">4th</button>
+                        </div>
+                    </div>
+                    <div id="reset">
+                    <button onclick="resetBtn()">Reset Score</button>
+                    </div>
+            </div>
+            </div>
+            <div class="column">
+                <h3>AWAY</h3>
+                <h2 id="score-away">0</h2>
+            <div id="away-btn">
+                <button onclick="incrementAwaySingle()">+1</button>
+                <button onclick="incrementAwayDouble()">+2</button>
+                <button onclick="incrementAwayTriple()">+3</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

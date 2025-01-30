@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'CursedTimer'; 
+    src: url('cursed-timer.ttf') format('truetype'); 
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(basketball-court.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    align-items: top;
+    margin: 50px;
+    position: absolute;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px dashed #F6EB14;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 3px #000000;
+    box-shadow: 10px 5px 3px black;
+}
+
+#score-home {
+    background: #0a0001;
+    font-size: 90px;
+    color: #F94F6D;
+    width: 120px;
+    margin: 0px 20px 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: CursedTimer;
+}
+
+#score-away {
+    background: #0a0001;
+    font-size: 90px;
+    color: #F94F6D;
+    width: 120px;
+    margin: 0px 20px 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: CursedTimer;
+}
+
+#qtr-reset-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#qtr {
+    color: #ffffff;
+    text-align: center;
+    border: 2px dashed #F6EB14;
+    padding: 0px 10px; 
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px #000000;
+    box-shadow: 5px 5px 2px black ;
+}
+
+#qtr-buttons-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 5px;
+}
+
+#timer {
+    font-size: 20px; 
+    font-family: CursedTimer;
+    color: #F94F6D;
+    background: #0a0001;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    box-shadow: 10px 5px 3px black ;
+}
+
+#qtr-numbers-first, #qtr-numbers-second {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-qtr {
+    font-size: 10px;
+    padding: 5px; 
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; 
+    background-color: #F6EB14;
+    color: #000000;
+    border-radius: 4px;
+}
+
+#qtr-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0001;
+    font-size: 40px;
+    color: #F94F6D;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    font-family: CursedTimer;
+    margin: 0%;
+    box-shadow: 10px 5px 3px black ;
+}
+
+#reset button {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#reset {
+    margin-top: 0px;
+}
+
+button {
+    background: #D5573B;
+    color: #F7EBE8;
+    border: 0.5px double 262626;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+button:hover{
+    background: #5DA271;
+}
